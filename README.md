@@ -1,6 +1,12 @@
 # Approximating the Curves with Straight Lines (Yes, Really)
 author: Jędrzej Wydra
 
+## Short summary
+Implemented a sliding-window approach with local linear models in Python to approximate nonlinear functions, using gradient descent for sequential parameter updates.
+
+## Technical summary
+Generated noisy sine-wave data and applied linear regression fitted via gradient descent on small, overlapping windows to locally approximate the function. Combined local predictions to reconstruct the global nonlinear shape, demonstrating Taylor-based local linearity. Visualized approximation quality and compared single global vs. multi-window linear fits using Python.
+
 ## History
 Complex tools for complex problems? Not always necessary. In this project, I set out to answer a simple question: can a nonlinear function be reconstructed using a simple linear model? The answer, delightfully, is yes — under the right conditions.
 
